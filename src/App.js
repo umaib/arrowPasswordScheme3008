@@ -71,7 +71,7 @@ const App = ({correctPassword, onCorrect, onIncorrect}) => {
             </div>
             <div style ={{flex: 1, flexDirection: 'row'}}>
               <button ><img id="up-arrow" style={{width:80, height:100}} src={require("./leftArrow.png")} onClick={leftArrowClicked} alt="hello" /></button>
-              <button><img id="up-arrow" style={{width:80, height:100}} src={require("./blank.png")} onClick={leftArrowClicked} alt="hello" /></button>
+              <button><img id="up-arrow" style={{width:80, height:100}} src={require("./blank.png")} alt="hello" /></button>
               <button><img id="up-arrow" style={{width:80, height:100}} src={require("./rightArrow.png")} onClick={rightArrowClicked} alt="hello" /></button>
             </div>
             <div style ={{flex: 1, flexDirection: 'row'}}>
