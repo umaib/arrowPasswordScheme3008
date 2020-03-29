@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-const App = (correctPassword, onCorrect, onIncorrect) => {
+const App = ({correctPassword, onCorrect, onIncorrect}) => {
   correctPassword = "0000000";
   onCorrect = () => {console.log("correct")}
   onIncorrect = () => {console.log("incorrect")}
@@ -13,12 +13,12 @@ const App = (correctPassword, onCorrect, onIncorrect) => {
     console.log(masterPassword);
     if(masterPassword.length === 7){
       if(masterPassword === correctPassword){
-        alert('Correct :)');
         onCorrect();
+        alert('Correct :)');
       }
       else{
-        alert('Incorrect :(');
         onIncorrect();
+        alert('Incorrect :(');
       }
        
       setMasterPassword("");
@@ -60,7 +60,6 @@ const App = (correctPassword, onCorrect, onIncorrect) => {
     checkLimit();
   }
 
- // function App() {
     return (
       <div className="App">
         <header className="App-header">
@@ -84,9 +83,6 @@ const App = (correctPassword, onCorrect, onIncorrect) => {
         </header>
       </div>
 
-      
-
     );
-//  }
 }
 export default App;
